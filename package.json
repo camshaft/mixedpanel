@@ -1,7 +1,7 @@
 {
-  "name": "mixpanel-api",
-  "version": "0.0.0",
-  "description": "Mixpanel API Clone",
+  "name": "mixedpanel",
+  "version": "0.0.1",
+  "description": "Mixpanel Clone",
   "main": "app.js",
   "scripts": {
     "test": "NODE_ENV=test mocha"
@@ -14,10 +14,10 @@
   "license": "MIT",
   "dependencies": {
     "express": "~3.1.0",
-    "startup": "~0.1.11",
     "pack-n-stack": "~0.1.0",
     "everypaas": "git+https://github.com/niallo/everypaas.git",
-    "redis": "~0.8.2"
+    "redis": "~0.8.2",
+    "connect-base": "0.0.2"
   },
   "devDependencies": {
     "should": "~1.2.2",

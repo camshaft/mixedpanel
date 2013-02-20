@@ -4,7 +4,7 @@
 var should = require("should")
   , supertest = require("supertest")
   , Mixpanel = require("mixpanel")
-  , app = require("..");
+  , app = require("..")();
 
 describe("Mixpanel", function(){
   

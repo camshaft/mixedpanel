@@ -7,36 +7,25 @@ var util = require("./lib/util")
   , engage = require("./services/engage");
 
 exports.track = function(emitter) {
-  return function (req, res, next) {
-    util.parseData(req.query.data, function(err, data) {
-      if(err) return next(err);
-      track.save(data, function(err) {
-        if(err) return next(err);
-        res.send("1");
-      });
-    });
-  };
+  return eventHandler("track", track, emitter);
 };
 
 exports.imp = function(emitter) {
-  return function (req, res, next) {
-    util.parseData(req.query.data, function(err, data) {
-      if(err) return next(err);
-      imp.save(data, function(err) {
-        if(err) return next(err);
-        res.send("1");
-      });
-    });
-  };
+  return eventHandler("import", imp, emitter);
 };
 
 exports.engage = function(emitter) {
+  return eventHandler("engage", engage, emitter);
+};
+
+function eventHandler(name, service, emitter) {
   return function (req, res, next) {
     util.parseData(req.query.data, function(err, data) {
       if(err) return next(err);
-      engage.save(data, function(err) {
+      service.save(data, function(err, obj) {
         if(err) return next(err);
         res.send("1");
+        emitter.emit(name, obj)
       });
     });
   };

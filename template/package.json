@@ -1,0 +1,9 @@
+{
+  "name": "hosted-mixedpanel",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "mixedpanel": "*",
+    "startup": "~0.1.0"
+  }
+}

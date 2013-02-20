@@ -10,5 +10,7 @@ exports.save = function(data, cb) {
     properties: data.properties
   };
 
-  redis.lpush("events:"+data.event, obj, cb);
+  redis.lpush("events:"+data.event, obj, function(err) {
+    cb(err, obj);
+  });
 };
