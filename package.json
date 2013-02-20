@@ -1,0 +1,28 @@
+{
+  "name": "mixpanel-api",
+  "version": "0.0.0",
+  "description": "Mixpanel API Clone",
+  "main": "app.js",
+  "scripts": {
+    "test": "NODE_ENV=test mocha"
+  },
+  "repository": "",
+  "keywords": [
+    "mixpanel"
+  ],
+  "author": "Cameron Bytheway",
+  "license": "MIT",
+  "dependencies": {
+    "express": "~3.1.0",
+    "startup": "~0.1.11",
+    "pack-n-stack": "~0.1.0",
+    "everypaas": "git+https://github.com/niallo/everypaas.git",
+    "redis": "~0.8.2"
+  },
+  "devDependencies": {
+    "should": "~1.2.2",
+    "supertest": "~0.5.1",
+    "mocha": "~1.8.1",
+    "mixpanel": "git+https://github.com/CamShaft/mixpanel-node.git"
+  }
+}
