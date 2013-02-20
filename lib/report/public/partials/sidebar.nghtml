@@ -1,0 +1,18 @@
+<ul class="nav nav-list">
+  <li class="nav-header">Activity</li>
+  <li class="trends"><a href="#/">Trends</a></li>
+
+  <li class="nav-header">Engagement</li>
+  <li class="funnels"><a href="#/funnels">Funnels</a></li>
+  <li class="segmentation"><a href="#/segmentation">Segmentation</a></li>
+  <li class="retention"><a href="#/retention">Retention</a></li>
+  <li class="formulas"><a href="#/formulas">Formulas</a></li>
+  <li class="streams"><a href="#/streams">Streams</a></li>
+  <li class="bookmarks"><a href="#/bookmarks">Bookmarks</a></li>
+
+  <li class="nav-header">People</li>
+  <li class="explore"><a href="#/explore">Explore</a></li>
+  <li class="insight"><a href="#/insight">Insight</a></li>
+  <li class="notifications"><a href="#/notifications">Notifications</a></li>
+  <li class="revenue"><a href="#/revenue">Revenue</a></li>
+</ul>

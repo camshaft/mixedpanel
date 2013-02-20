@@ -1,0 +1,20 @@
+<html data-ng-app="mixedpanel">
+<head>
+  <title>Mixedpanel</title>
+  <link rel="stylesheet" type="text/css" href="/report/assets/build.css">
+</head>
+<body>
+  <div id="wrapper">
+    <div class="container">
+      <div class="header row" data-ng-include="'/report/partials/header.nghtml'"></div>
+      <div class="row">
+        <div class="sidebar span2" data-ng-include="'/report/partials/sidebar.nghtml'"></div>
+        <div class="span10" data-ng-view=""></div>
+      </div>
+      <div class="footer row" data-ng-include="'/report/partials/footer.nghtml'"></div>
+    </div>
+  </div>
+  <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+  <script type="text/javascript" async src="/report/assets/build.js"></script>
+</body>
+</html>

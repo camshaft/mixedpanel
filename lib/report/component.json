@@ -1,0 +1,28 @@
+{
+  "name": "mixedpanel-report",
+  "repo": "CamShaft/mixedpanel-report",
+  "description": "Mixedpanel Reports",
+  "version": "0.1.0",
+  "keywords": [],
+  "dependencies": {
+    "CamShaft/bootstrap-reset": "*",
+    "CamShaft/bootstrap-grid": "*",
+    "CamShaft/bootstrap-type": "*",
+    "CamShaft/bootstrap-forms": "*",
+    "CamShaft/bootstrap-buttons": "*",
+    "CamShaft/bootstrap-responsive": "*",
+    "CamShaft/component-angular": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "public/js/config.js",
+  "scripts": [
+    "public/js/config.js",
+    "public/js/index.js",
+    "public/js/controllers/index.js",
+    "public/partials/index.nghtml"
+  ],
+  "styles": [],
+  "images": [],
+  "files": []
+}

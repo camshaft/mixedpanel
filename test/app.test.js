@@ -29,15 +29,14 @@ describe("Mixpanel", function(){
       });
     });
 
-
     it("should return a 1 when tracking data", function(done){
-      client.track("testing", {first: "prop"}, function(err) {
+      client.track("Track Test", {first: "prop"}, function(err) {
         done(err);
       });
     });
 
     it("should return a 1 when importing data", function(done){
-      client.import("testing", new Date(), {second: "prop"}, function(err) {
+      client.import("Import Test", new Date(), {second: "prop"}, function(err) {
         done(err);
       });
     });

@@ -4,7 +4,7 @@
   "description": "Mixpanel Clone",
   "main": "app.js",
   "scripts": {
-    "test": "NODE_ENV=test mocha"
+    "test": "NODE_ENV=test CLIENT_TOKEN=testing mocha"
   },
   "repository": "",
   "keywords": [
@@ -17,12 +17,16 @@
     "pack-n-stack": "~0.1.0",
     "everypaas": "git+https://github.com/niallo/everypaas.git",
     "redis": "~0.8.2",
-    "connect-base": "0.0.2"
+    "connect-base": "0.0.2",
+    "debug": "~0.7.2",
+    "msgpack": "~0.1.7",
+    "socket.io": "~0.9.13"
   },
   "devDependencies": {
     "should": "~1.2.2",
     "supertest": "~0.5.1",
     "mocha": "~1.8.1",
-    "mixpanel": "git+https://github.com/CamShaft/mixpanel-node.git"
+    "mixpanel": "git+https://github.com/CamShaft/mixpanel-node.git",
+    "chai": "~1.5.0"
   }
 }
